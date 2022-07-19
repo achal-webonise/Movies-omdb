@@ -26,10 +26,10 @@ public class DetailActivity extends AppCompatActivity {
         String mTitle = bundle.getString("title");
         String mPoster = bundle.getString("poster");
         String mOverView = bundle.getString("overview");
-        double mRating = bundle.getDouble("rating");
+        String mRating = bundle.getString("rating");
 
         Glide.with(this).load(mPoster).into(imageView);
-        rating_tv.setText(Double.toString(mRating));
+        rating_tv.setText(mRating);
         title_tv.setText(mTitle);
         overview_tv.setText(mOverView);
 

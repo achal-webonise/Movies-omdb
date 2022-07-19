@@ -2,10 +2,9 @@ package com.example.movies_omdb;
 
 public class Movie {
 
-    private String title , poster , overview;
-    private Double rating;
+    private String title , poster , overview,rating;
 
-    public Movie(String title , String poster , String overview , Double rating){
+    public Movie(String title , String poster , String overview , String rating){
         this.title = title;
         this.poster = poster;
         this.overview = overview;
@@ -24,7 +23,7 @@ public class Movie {
         return overview;
     }
 
-    public Double getRating() {
+    public String getRating() {
         return rating;
     }
 }
